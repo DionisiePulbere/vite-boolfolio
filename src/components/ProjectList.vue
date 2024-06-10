@@ -31,7 +31,7 @@ export default{
     <div class="container">
         <h1 class="text-center">Tutti i Progetti</h1>
         <div class="row row-cols-3">
-            <SingleProject v-for="project in projects" :projectDetails="project" :key="project.id"></SingleProject>
+            <ProjectCard v-for="project in projects" :projectDetails="project" :key="project.id"></ProjectCard>
         </div>
     </div>
 </template>
