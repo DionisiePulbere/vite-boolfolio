@@ -30,7 +30,7 @@ export default{
                     <strong>Technology</strong>: <span v-for="technology in projectDetails.technologies">{{ technology.name }} &nbsp;</span>
                 </div>
                 <p v-if="projectDetails.summary" class="card-text">{{ truncateText(projectDetails.summary) }}</p>
-                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                <router-link :to="{ name: 'single-project', params: { slug: projectDetails.slug } }" class="btn btn-primary">Show More</router-link>
             </div>
         </div>
     </div>
